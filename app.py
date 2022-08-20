@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/inicio')
 
 def index():
-    return render_template('index.html')
+    return render_template('/templates/index.html')
 
 loaded_model = pickle.load(open('coffee_model.pkl', 'rb')) # rb: read binary
 
